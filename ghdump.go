@@ -4,7 +4,6 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/knakayama/ghdump/credential"
 	"github.com/knakayama/ghdump/dump"
 )
 
@@ -14,13 +13,6 @@ func main() {
 	app.Usage = "Dump your repository or starred repository in your github"
 	app.HideHelp = true
 	app.Commands = []cli.Command{
-		{
-			Name:  "init",
-			Usage: "Setup github credential",
-			Action: func(c *cli.Context) {
-				credential.SetCredential()
-			},
-		},
 		{
 			Name:  "repo",
 			Usage: "Dump your repository",
