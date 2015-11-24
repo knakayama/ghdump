@@ -13,6 +13,12 @@ This command dumps repository only. That's useless, but with tmux and peco, it's
 $ go get github.com/knakayama/ghdump
 ```
 
+## TODO
+
+- [ ] generate oauth2 token
+- [ ] goroutine
+- [ ] clean up uggly codes
+
 ## License
 
 MIT
